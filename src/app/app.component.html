@@ -1,0 +1,5 @@
+<app-header
+  (toggleVisibility)="toggleVisibility($event)"
+  [isVisible]="componentIsVisible"
+></app-header>
+<app-hidden-component *ngIf="componentIsVisible"></app-hidden-component>

@@ -3,8 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = '01_display_hide';
+  componentIsVisible: boolean = false;
+
+  toggleVisibility(event: boolean): void {
+    this.componentIsVisible = event;
+  }
 }
